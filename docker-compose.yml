@@ -1,0 +1,23 @@
+version: '3'
+
+
+services:
+  web: # Web landing y presentación del proyecto
+    image: ghcr.io/democraciaenred/pis:2.0.0
+    ports:
+      - "5000:5000"
+    environment:
+      - GOOGLE_ANALYTICS_TRACKING_ID=#######
+      - URI_MAPA_NORMATIVO=http://localhost:8050/mapa-normativo
+      - URI_INDICADORES_CENSO=http://localhost:8050/indicadores-censo
+      - URI_RANKING_AMBIENTAL=http://localhost:8050/ranking-ambiental
+
+  dash: # Aplicaciones hechas en python
+    image: ghcr.io/democraciaenred/pis-dash:2.0.0
+    ports:
+      - "8050:8050"
+
+  shiny: # Aplicaciones hechas en shiny
+    image: ghcr.io/democraciaenred/pis-shiny:2.0.0
+    ports:
+      - "3838:3838"
