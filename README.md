@@ -10,7 +10,7 @@
 * [2. Descripción y contexto](#2-descripción-y-contexto)
 * [3. Fundamento del software](#3-fundamento-del-software)
 * [4. Guía de instalación](#4-guía-de-instalación)
-* [5. Autor](#5-autor)
+* [5. Autor](#5-co-autoría)
 * [6. Versión](#6-versión)
 * [7. Licencia](#7-licencia)
 
