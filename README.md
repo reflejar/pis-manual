@@ -22,17 +22,20 @@
 
 ## 2. Descripción y contexto
 
-**PIS “Pesticidas Introducidos Silenciosamente”** es una iniciativa creada por Democracia en Red. Es una plataforma web que engloba 5 herramientas para reducir el impacto de los agrotóxicos en nuestros cuerpos; en términos generales:
+**PIS “Pesticidas Introducidos Silenciosamente”** es una iniciativa creada por Democracia en Red. Es una plataforma web que engloba varias herramientas para reducir el impacto de los agrotóxicos en nuestros cuerpos; en términos generales:
 
-1. Landing Page que brinda información y sirve todas las herramientas.
+1. Landing Page que brinda información y presenta todas las herramientas.
 
-2. Mapa interactivo de Normativas de la provincia de Buenos Aires, donde se pueden observar las zonas donde está prohibido fumigar con glifosato, según la normativa de cada departamento. En 2 semanas estará listo el MVP, habría que coordinar con DER para lanzarlo.
+2. Mapa interactivo de zonificación normativa de la provincia de Buenos Aires, donde se pueden observar las zonas donde está prohibido fumigar con glifosato, según la normativa de cada departamento.
 
-3. Plataforma ambiental donde se visualizan los principales resultados de las bases de datos de los últimos censos rurales.
+3. Mapa de normativa comparada entre distritos rankeado a través de una metodología específica que toma en cuenta las zonas de exclusión, amortiguamiento y otras variables a fines.
 
-4. Mapa de Testeos de la provincia de Buenos Aires donde se observan los resultados de análisis en orina, con el objetivo de determinar si las personas testeadas tienen agrotóxicos en orina.
+4. Plataforma de análisis de los censos agropecuarios donde se visualizan los principales indicadores de relevancia desde las bases de datos servidos por INDEC.
 
-5. Buscador de jurisprudencia al respecto del uso de glifosato.
+5. Mapa interactivo de Testeos de la provincia de Buenos Aires donde se observan los resultados de análisis en orina, agua, materia vegetal, etc, con el objetivo de determinar si se observan agrotóxicos.
+
+6. Buscador de jurisprudencia al respecto del uso de glifosato.
+
 
 
 ## 3. Fundamento del software
@@ -41,7 +44,7 @@ El proyecto está desarrollado en 3 tecnologías diferentes.
 
 - [Python Dash](https://dash.plotly.com/) para el mapa de de normativas, la plataforma ambiental y el buscador de jurisprudencia
 - [R Shiny](https://shiny.posit.co/) para el mapa de testeos
-- [Python Flask](https://flask.palletsprojects.com/) para landing y web descriptiva
+- Stack web básico para landing y web descriptiva
 
 Se desarrolló con enfoque de arquitectura distribuida en donde cada uno de estos tres componentes funcionan asiladamente por varios motivos:
 
