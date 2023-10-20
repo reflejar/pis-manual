@@ -59,15 +59,10 @@ Hay dos formas de instalar PIS: Una es de forma clásica, vernáculas, descargan
 
 La segunda forma es utilizando Docker y `docker compose`. En solo un paso se instala y conectan todos. El manual lo pueden encontrar haciendo [click aqui](instalacion-docker.md)
 
-* [pis-web on Github/DemocraciaEnRed](https://github.com/DemocraciaEnRed/pis)
-* [pis-dash on Github/DemocraciaEnRed](https://github.com/DemocraciaEnRed/pis-dash) 
-* [pis-shiny on Github/DemocraciaEnRed](https://github.com/DemocraciaEnRed/pis-shiny)
 
-
-> Los repositorios originales y de desarrollo se encuentran en 
-> * [pis-web on Github/reflejar](https://github.com/reflejar/pis)
-> * [pis-dash on Github/reflejar](https://github.com/reflejar/pis-dash) 
-> * [pis-shiny on Github/reflejar](https://github.com/reflejar/pis-shiny)
+* [pis-web on Github/reflejar](https://github.com/reflejar/pis)
+* [pis-dash on Github/reflejar](https://github.com/reflejar/pis-dash) 
+* [pis-shiny on Github/reflejar](https://github.com/reflejar/pis-shiny)
 
 ## 5. Co-autoría
 

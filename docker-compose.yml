@@ -5,19 +5,30 @@ services:
   web:
     build:
       context: .
-    # image: ghcr.io/reflejar/pis-web:latest
-    image: ghcr.io/democraciaenred/pis:1.1.3
+    image: ghcr.io/reflejar/pis:1.1.3
     ports:
       - 3000:80
 
-  dash: # Aplicaciones hechas en python
-    # image: ghcr.io/reflejar/pis-dash:latest
-    image: ghcr.io/democraciaenred/pis-dash:1.0.0-beta2
+  censos: 
+    image: ghcr.io/reflejar/pis-dash:latest
     ports:
       - "8050:8050"
+    command: python main.py indicadores_censos
+  
+  ranking: 
+    image: ghcr.io/reflejar/pis-dash:latest
+    ports:
+      - "8050:8050"      
+    command: python main.py ranking_ambiental
+  
+  zonificacion: 
+    image: ghcr.io/reflejar/pis-dash:latest
+    ports:
+      - "8050:8050"      
+    command: python main.py mapa_normativo
 
   shiny: # Aplicaciones hechas en shiny
     # image: ghcr.io/reflejar/pis-shiny:latest
-    image: ghcr.io/democraciaenred/pis-shiny:1.0.0-beta1
+    image: ghcr.io/democraciaenred/pis-shiny:latest
     ports:
       - "3838:3838"
